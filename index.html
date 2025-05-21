@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8">
+  <title>My Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    .link-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .link-button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+  <h1>Welcome to My Homepage</h1>
+  <p>Select a page to visit:</p>
+
+  <!-- Links using buttons and JavaScript -->
+  <div>
+    <button class="link-button" onclick="goToPage('Snake.html')">Snake</button>
+  </div>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
 
 </body>
 </html>
-
-
